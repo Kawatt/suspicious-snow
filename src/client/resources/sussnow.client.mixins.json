@@ -3,7 +3,6 @@
 	"package": "com.sussnow.mixin.client",
 	"compatibilityLevel": "JAVA_17",
 	"client": [
-		"SusSnowClientMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1
