@@ -1,10 +1,13 @@
 package com.sussnow;
 
+import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.*;
 import net.minecraft.block.entity.BlockEntityType;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemGroup;
+import net.minecraft.item.ItemGroups;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
@@ -27,18 +30,21 @@ public class SusSnowBlocks {
             BLOCK_SUSPICIOUS_SNOW_PLACE, BLOCK_SUSPICIOUS_SNOW_HIT, BLOCK_SUSPICIOUS_SNOW_FALL);
 
     public static final Block SUSPICIOUS_SNOW_BLOCK;
+    public static final Item SUSPICIOUS_SNOW_ITEM;
     public static final BlockEntityType<SusSnowBlockEntity> SUSPICIOUS_SNOW_BLOCK_ENTITY;
 
     static {
         //Block
         SUSPICIOUS_SNOW_BLOCK = Registry.register(Registries.BLOCK, new Identifier(SusSnowMod.MOD_ID, "suspicious_snow"), new SusSnowBlock(Blocks.POWDER_SNOW, FabricBlockSettings.copyOf(Blocks.SNOW_BLOCK).sounds(SUSPICIOUS_SNOW_SOUNDS), ITEM_BRUSH_BRUSHING_SNOW, ITEM_BRUSH_BRUSHING_SNOW_COMPLETE));
         //BlockItem
-        Registry.register(Registries.ITEM, new Identifier(SusSnowMod.MOD_ID, "suspicious_snow"), new BlockItem(SUSPICIOUS_SNOW_BLOCK, new Item.Settings()));
+        SUSPICIOUS_SNOW_ITEM = Registry.register(Registries.ITEM, new Identifier(SusSnowMod.MOD_ID, "suspicious_snow"), new BlockItem(SUSPICIOUS_SNOW_BLOCK, new Item.Settings()));
         //BlockEntity
         SUSPICIOUS_SNOW_BLOCK_ENTITY = Registry.register(Registries.BLOCK_ENTITY_TYPE, new Identifier(SusSnowMod.MOD_ID, "suspicious_snow"), BlockEntityType.Builder.create(SusSnowBlockEntity::new, SUSPICIOUS_SNOW_BLOCK).build(null));
     }
 
-    public static void initialize() {}
+    public static void initialize() {
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.FUNCTIONAL).register(entries -> entries.add(SUSPICIOUS_SNOW_ITEM));
+    }
 
     public static SoundEvent registerSoundEvent(String name) {
         Identifier id = new Identifier(SusSnowMod.MOD_ID, name);
