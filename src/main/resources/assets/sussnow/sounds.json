@@ -1,0 +1,81 @@
+{
+  "item.brush.brushing.snow": {
+    "subtitle": "subtitles.sussnow.item.brush.brushing.snow",
+    "sounds": [
+      "minecraft:block/powder_snow/break1",
+      "minecraft:block/powder_snow/break2",
+      "minecraft:block/powder_snow/break3",
+      "minecraft:block/powder_snow/break4",
+      "minecraft:block/powder_snow/break5",
+      "minecraft:block/powder_snow/break6",
+      "minecraft:block/powder_snow/break7"
+    ]
+  },
+  "item.brush.brushing.snow.complete": {
+    "subtitle": "subtitles.sussnow.item.brush.brushing.snow.complete",
+    "sounds": [
+      "minecraft:block/powder_snow/break1",
+      "minecraft:block/powder_snow/break2",
+      "minecraft:block/powder_snow/break3",
+      "minecraft:block/powder_snow/break4",
+      "minecraft:block/powder_snow/break5",
+      "minecraft:block/powder_snow/break6",
+      "minecraft:block/powder_snow/break7"
+    ]
+  },
+  "block.suspicious_snow.break": {
+    "subtitle": "subtitles.block.generic.break",
+    "sounds": [
+      "minecraft:block/suspicious_sand/break1",
+      "minecraft:block/suspicious_sand/break2",
+      "minecraft:block/suspicious_sand/break3",
+      "minecraft:block/suspicious_sand/break4",
+      "minecraft:block/suspicious_sand/break5",
+      "minecraft:block/suspicious_sand/break6"
+    ]
+  },
+  "block.suspicious_snow.step": {
+    "subtitle": "subtitles.block.generic.footsteps",
+    "sounds": [
+      "minecraft:block/powder_snow/step1",
+      "minecraft:block/powder_snow/step2",
+      "minecraft:block/powder_snow/step3",
+      "minecraft:block/powder_snow/step4",
+      "minecraft:block/powder_snow/step5",
+      "minecraft:block/powder_snow/step6",
+      "minecraft:block/powder_snow/step7",
+      "minecraft:block/powder_snow/step8",
+      "minecraft:block/powder_snow/step9",
+      "minecraft:block/powder_snow/step10"
+    ]
+  },
+  "block.suspicious_snow.place": {
+    "subtitle": "subtitles.block.generic.place",
+    "sounds": [
+      "minecraft:block/powder_snow/break1",
+      "minecraft:block/powder_snow/break2",
+      "minecraft:block/powder_snow/break3",
+      "minecraft:block/powder_snow/break4",
+      "minecraft:block/powder_snow/break5",
+      "minecraft:block/powder_snow/break6",
+      "minecraft:block/powder_snow/break7"
+    ]
+  },
+  "block.suspicious_snow.hit": {
+    "subtitle": "subtitles.block.generic.hit",
+    "sounds": [
+      "minecraft:block/powder_snow/break1",
+      "minecraft:block/powder_snow/break2",
+      "minecraft:block/powder_snow/break3",
+      "minecraft:block/powder_snow/break4",
+      "minecraft:block/powder_snow/break5",
+      "minecraft:block/powder_snow/break6",
+      "minecraft:block/powder_snow/break7"
+    ]
+  },
+  "block.suspicious_snow.land": {
+    "subtitle": "subtitles.block.generic.land",
+    "sounds": [
+    ]
+  }
+}

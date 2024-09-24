@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "sussnow:block/suspicious_snow_1"
+  }
+}
